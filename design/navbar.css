@@ -1,3 +1,12 @@
+* {
+}
+body {
+  background-color: #1f1b2d;
+}
+
+.pointer {
+  cursor: pointer;
+}
 .border-left {
   border-left: 1px solid gray;
 }
@@ -28,11 +37,56 @@
   width: 25px;
   object-fit: contain;
 }
+.nav-button1 {
+  width: 30px;
+  object-fit: contain;
+}
 .buttonD {
   background-color: #fd5631;
-
-  border-radius: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
   margin-left: 20px;
+  cursor: pointer;
+}
+.buttonD1 {
+  background-color: #fd5631;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.min-height {
+  height: 100vh;
+}
+.widthH {
+  width: 100%;
+}
+.heroPleft {
+  padding-left: 30px;
+  padding-right: 0%;
+}
+.hero-title {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.hero-padding-top {
+  margin-top: 130px;
+}
+.hero-title-h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 992px) {
+  .showherotext {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .marginlg {
+    margin-top: 100px;
+  }
 }
 /* hero img */
 .heroImg {

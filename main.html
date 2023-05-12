@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="design/navbar.css" />
-    <title>Document</title>
+    <title>FindIt</title>
   </head>
   <body>
     <!-- Nav Section -->
-    <nav class="navbar navbar-expand-lg fixed-top transparentB py-2">
+    <nav class="navbar navbar-expand-lg fixed-top transparentB py-3">
       <div class="container-fluid">
         <div class="d-flex">
           <div class="d-flex align-items-center">
             <img src="./img/Logo.png" alt="" class="navLogo" />
           </div>
           <div class="d-flex align-items-center text-white navLogoP">
-            Find It
+            FindIt
           </div>
         </div>
         <div>
           <button
-            class="navbar-toggler shadow-none border-0 py-2"
+            class="navbar-toggler shadow-none border-0 py-2 px-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -34,22 +34,13 @@
               ><img
                 src="./img/icons/icons8-menu-50.png"
                 alt=""
-                class="nav-button"
+                class="nav-button1"
             /></span>
           </button>
-          <div
-            class="btn text-white-50 text-b flex-row d-inline d-lg-none"
-            type="submit"
-          >
-            <span class="">
-              <img
-                src="./img/icons/icons8-person-50.png"
-                alt=""
-                class="nav-button"
-              />
-            </span>
-            Sign in
-          </div>
+
+          <button class="btn text-white text-b buttonD1 d-inline d-lg-none">
+            <p class="d-inline">Sell Car</p>
+          </button>
         </div>
 
         <div
@@ -148,8 +139,8 @@
               </ul>
             </li>
           </ul>
-          <div class="btn text-white-50 text-b d-flex">
-            <span class="d-flex">
+          <div class="text-white-50 text-b d-flex">
+            <span class="d-flex pointer">
               <img
                 src="./img/icons/icons8-person-50.png"
                 alt=""
@@ -157,9 +148,9 @@
               />
               <div class="d-flex align-items-center">Sign in</div>
             </span>
-            <button class="btn text-white text-b buttonD">
-              <p class="d-inline">Sell Car</p>
-            </button>
+            <div class="text-white text-b buttonD">
+              <a>Sell Car</a>
+            </div>
           </div>
         </div>
       </div>
@@ -168,8 +159,34 @@
 
     <main>
       <!-- Hero Section -->
-      <section>
-        <div class="heroImg"></div>
+      <section class="container-fluid">
+        <div class="d-flex align-items-center min-vh-100">
+          <div class="row hero-padding-top marginlg position-relative">
+            <div
+              class="col-lg-5 d-none d-lg-inline-flex heroPleft hero-title flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white hero-title-h1 pb-4">
+                Easy way to find the right car
+              </h1>
+              <p class="text-white-50 fs-5">
+                FindIt is a leading digital marketplace for the automotive
+                industry that connects car shoppers with sellers.
+              </p>
+            </div>
+            <div
+              class="col-lg-3 col-12 showherotext d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white">Easy way to find the right car</h1>
+              <p class="text-white">
+                Finder is a leading digital marketplace for the automotive
+                industry that connects car shoppers with sellers.
+              </p>
+            </div>
+            <div class="col-lg-9 col-12 px-0">
+              <img src="./img/hero.png" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End Hero Section -->
     </main>
