@@ -10,13 +10,13 @@
   </head>
   <body>
     <!-- Nav Section -->
-    <nav class="navbar navbar-expand-lg fixed-top transparentB py-3">
+    <nav class="navbar navbar-expand-lg fixed-top navBackgroundC py-3">
       <div class="container-fluid">
         <div class="d-flex">
           <div class="d-flex align-items-center">
-            <img src="./img/Logo.png" alt="" class="navLogo" />
+            <img src="./img/Logo.png" alt="" class="navLogoImg" />
           </div>
-          <div class="d-flex align-items-center text-white navLogoP">
+          <div class="d-flex align-items-center text-white navLogoPaddingL">
             FindIt
           </div>
         </div>
@@ -34,17 +34,17 @@
               ><img
                 src="./img/icons/icons8-menu-50.png"
                 alt=""
-                class="nav-button1"
+                class="navMenuButton"
             /></span>
           </button>
 
-          <button class="btn text-white text-b buttonD1 d-inline d-lg-none">
+          <div class="text-white fontBold buttonD1 d-inline d-lg-none">
             <p class="d-inline">Sell Car</p>
-          </button>
+          </div>
         </div>
 
         <div
-          class="collapse navbar-collapse padding-left text-b"
+          class="collapse navbar-collapse navPaddingL fontBold"
           id="navbarSupportedContent "
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -59,7 +59,7 @@
                 <img
                   src="./img/icons/icons8-box-50.png"
                   alt=""
-                  class="nav-button"
+                  class="navIcon"
                 />
                 <div class="d-flex align-items-center">Demos</div>
               </a>
@@ -139,16 +139,16 @@
               </ul>
             </li>
           </ul>
-          <div class="text-white-50 text-b d-flex">
+          <div class="text-white-50 fontBold d-flex">
             <span class="d-flex pointer">
               <img
                 src="./img/icons/icons8-person-50.png"
                 alt=""
-                class="nav-button"
+                class="navIcon"
               />
               <div class="d-flex align-items-center">Sign in</div>
             </span>
-            <div class="text-white text-b buttonD">
+            <div class="text-white fontBold navButton">
               <a>Sell Car</a>
             </div>
           </div>
@@ -174,9 +174,11 @@
               </p>
             </div>
             <div
-              class="col-lg-3 col-12 showherotext d-flex flex-column justify-content-center align-items-center"
+              class="col-lg-3 col-12 showherotext d-flex flex-column justify-content-center text-center align-items-center"
             >
-              <h1 class="text-white">Easy way to find the right car</h1>
+              <h1 class="text-white heroTitleResponsinve">
+                Easy way to find the right car
+              </h1>
               <p class="text-white">
                 Finder is a leading digital marketplace for the automotive
                 industry that connects car shoppers with sellers.
@@ -189,6 +191,205 @@
         </div>
       </section>
       <!-- End Hero Section -->
+
+      <!-- Filter Search section -->
+      <section class="text-white container-fluid py-3">
+        <!-- upper content -->
+        <div class="d-flex mb-3">
+          <div class="searchButtonDesign1">
+            <a href="#" class="textOrange">New</a>
+          </div>
+          <div class="searchButtonDesign2">
+            <a href="#" class="textWhite">Used</a>
+          </div>
+        </div>
+        <!-- end upper content -->
+
+        <!-- search content -->
+        <div class="container-fluid">
+          <div class="row searchContainer py-2 py-lg-3 rounded-2">
+            <!-- first grid value -->
+            <div class="col-12 col-lg-2">
+              <div class="w-100 d-flex pb-3 p-lg-2 borderBottom">
+                <span class="iconsPL"
+                  ><img
+                    src="./img/icons/icons8-search-50.png"
+                    alt=""
+                    class="iconSize"
+                /></span>
+                <input
+                  type="text"
+                  placeholder="Keywords..."
+                  class="w-100 bg-transparent border-0 fontSize"
+                />
+              </div>
+            </div>
+            <!-- second grid value -->
+            <div class="col-12 col-lg-8">
+              <div class="container-fluid">
+                <div class="row fontSize py-2 py-lg-0 borderBottom">
+                  <!-- 1st grid item -->
+                  <div
+                    class="col col-12 col-sm-6 col-md-3 py-2 py-lg-2 d-flex borderL borderLHide"
+                  >
+                    <span class="iconsPL d-flex align-items-center"
+                      ><img
+                        src="./img//icons/icons8-bars-50.png"
+                        alt=""
+                        class="iconSize"
+                    /></span>
+                    <a
+                      class="nav-link dropdown-toggle text-white-50"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Make
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Personal Info</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Password & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Cars</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    </ul>
+                  </div>
+                  <!-- 2nd grid item -->
+                  <div
+                    class="col col-12 col-sm-6 col-md-3 py-2 py-lg-2 d-flex borderL borderLHide3"
+                  >
+                    <span class="iconsPL d-flex align-items-center"
+                      ><img
+                        src="./img//icons/icons8-bars-50.png"
+                        alt=""
+                        class="iconSize"
+                    /></span>
+                    <a
+                      class="nav-link dropdown-toggle text-white-50"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Model
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Personal Info</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Password & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Cars</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    </ul>
+                  </div>
+                  <!-- 3rd grid item -->
+                  <div
+                    class="col col-12 col-sm-6 col-md-3 py-2 py-lg-2 d-flex borderL borderLHide2"
+                  >
+                    <span class="iconsPL d-flex align-items-center"
+                      ><img
+                        src="./img//icons/icons8-suv-50.png"
+                        alt=""
+                        class="iconSize"
+                    /></span>
+                    <a
+                      class="nav-link dropdown-toggle text-white-50"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Body Type
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Personal Info</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Password & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Cars</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    </ul>
+                  </div>
+                  <!-- 4th grid item -->
+                  <div
+                    class="col col-12 col-sm-6 col-md-3 py-2 py-lg-2 d-flex borderL borderLHide3"
+                  >
+                    <span class="iconsPL d-flex align-items-center"
+                      ><img
+                        src="./img//icons/icons8-location-50.png"
+                        alt=""
+                        class="iconSize"
+                    /></span>
+                    <a
+                      class="nav-link dropdown-toggle text-white-50"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Location
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Personal Info</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Password & Security</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Cars</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                      <li><a class="dropdown-item" href="#">Reviews</a></li>
+                      <li><a class="dropdown-item" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- third grid value -->
+            <div
+              class="col-12 col-lg-2 pt-2 pt-lg-0 justify-content-center align-content-center"
+            >
+              <div class="py-2 fontSize searchButton">Search</div>
+            </div>
+          </div>
+        </div>
+        <!-- search content -->
+      </section>
+      <!-- Filter Search section -->
     </main>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
