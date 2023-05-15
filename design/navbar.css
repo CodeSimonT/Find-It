@@ -4,17 +4,38 @@ body {
   background-color: #1f1b2d;
 }
 /* Global style */
+.bodyColor {
+  background-color: #1f1b2d;
+}
 .pointer {
   cursor: pointer;
 }
 a {
   text-decoration: none;
 }
+p {
+  margin-bottom: 0px;
+}
+.radiusB {
+  border-radius: 20px;
+}
+/* h5 {
+  margin-bottom: 0%;
+} */
 .textOrange {
   color: #fd5631;
 }
 .textWhite {
   color: white;
+}
+.fontBold {
+  font-weight: bold;
+}
+.skyblue {
+  background: #3c76f2;
+}
+.lightgreen {
+  background-color: #07c98b;
 }
 /* End Global style */
 
@@ -33,9 +54,7 @@ a {
   width: 30px;
   object-fit: contain;
 }
-.fontBold {
-  font-weight: bold;
-}
+
 .navButton {
   background-color: #fd5631;
   padding: 8px 15px;
@@ -93,12 +112,15 @@ a {
   padding: 8px 15px;
   background-color: white;
   border-radius: 8px;
+  margin-right: 5px;
+}
+.backgroundColor {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .searchButtonDesign2 {
   padding: 8px 15px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  margin-left: 12px;
 }
 .iconSize {
   width: 20px;
@@ -109,6 +131,10 @@ a {
 }
 .fontSize {
   font-size: 18px;
+  color: white;
+}
+.borderOut {
+  outline: none;
 }
 .borderL {
   border-left: 1px solid gray;
@@ -125,6 +151,93 @@ a {
   border-radius: 5px;
 }
 /* End Filter Search design */
+
+/* Top Offers design */
+.width100 {
+  width: 100%;
+}
+.offersBorderB {
+  border-bottom: 1px solid gray;
+}
+.offersBorderT {
+  border-top: 1px solid gray;
+}
+.offerImgP {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+.offerImgPL {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hei {
+  height: 100%;
+}
+.backgroundImg {
+  background-image: url("../img/wallpaperflare.com_wallpaper\ \(6\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.offerIconS {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+.offerBorderRadius {
+  border-radius: 8px;
+}
+.offerGridD {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.offerContainerGrid {
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 10px;
+}
+.offerRow {
+}
+.offerOverlay {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.overlayPaddiing {
+  padding: 6px 10px;
+}
+.offerPaddingL {
+  padding-right: 0;
+}
+.offerleftContent {
+  width: 40%;
+}
+.offerRightContent {
+  width: 60%;
+}
+.offerHeightValue {
+  display: grid;
+  grid-template-rows: 49% 50%;
+}
+.flexSolution {
+  display: flex;
+  align-items: bet;
+}
+.rowGap {
+  row-gap: 13px;
+}
+.responsiveP {
+  padding-bottom: 45px;
+}
+/* End Top Offers design */
+
+/* logo section design */
+.logosectionSize {
+  width: 40px;
+}
+/* end logo section design */
 
 /* Media Query */
 

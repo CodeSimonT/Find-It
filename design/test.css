@@ -1,0 +1,9 @@
+.broderT {
+  border: 1px solid white;
+}
+body {
+  background-color: black;
+}
+.gapp {
+  gap: 5px;
+}
