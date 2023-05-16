@@ -168,8 +168,8 @@ p {
   width: 100%;
 }
 .offerImgPL {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  /* border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; */
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -238,6 +238,22 @@ p {
   width: 40px;
 }
 /* end logo section design */
+
+/* apart section design */
+.apartIconP {
+  width: 30px;
+}
+.dashedBorder {
+  border-left: 2px white dashed;
+}
+.heightWidth {
+  height: 100%;
+  width: 100%;
+}
+.imgsize {
+  width: 200px;
+}
+/* end apart section design */
 
 /* Media Query */
 
