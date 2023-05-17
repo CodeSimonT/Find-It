@@ -160,7 +160,7 @@
     <main>
       <!-- Hero Section -->
       <section class="container-fluid">
-        <div class="d-flex align-items-center min-vh-100">
+        <div class="d-flex align-items-center">
           <div class="row hero-padding-top marginlg position-relative">
             <div
               class="col-lg-5 d-none d-lg-inline-flex heroPleft hero-title flex-column justify-content-center align-items-center"
@@ -410,13 +410,11 @@
             </div>
             <div class="row">
               <div class="col-lg-6 px-2 mb-3 mb-lg-0">
-                <div
-                  class="card w-100 h-100 backgroundColor"
-                  style="width: 18rem"
-                >
+                <div class="card backgroundColor h-100">
+                  <!-- top img -->
                   <div class="card-img-top position-relative">
                     <div
-                      id="carouselExampleControls1"
+                      id="topItem1"
                       class="carousel slide"
                       data-bs-ride="carousel"
                     >
@@ -443,7 +441,7 @@
                       <button
                         class="carousel-control-prev"
                         type="button"
-                        data-bs-target="#carouselExampleControls1"
+                        data-bs-target="#topItem1"
                         data-bs-slide="prev"
                       >
                         <span
@@ -455,7 +453,7 @@
                       <button
                         class="carousel-control-next"
                         type="button"
-                        data-bs-target="#carouselExampleControls1"
+                        data-bs-target="#topItem1"
                         data-bs-slide="next"
                       >
                         <span
@@ -474,14 +472,24 @@
                     </div>
                     <!-- overlay -->
                   </div>
-                  <div class="card-body p-0">
-                    <div
-                      class="text-white pb-0 d-flex justify-content-between pt-3 px-3"
-                    >
+                  <div class="card-body">
+                    <!-- title -->
+                    <div class="text-white pb-0 d-flex justify-content-between">
                       <p class="mb-0">2015</p>
-                      <p class="mb-0">Compare</p>
+                      <div class="form-check text-white">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Compare
+                        </label>
+                      </div>
                     </div>
-                    <div class="text-white-50 pt-3 pb-3 px-3 fontBold">
+                    <!-- content -->
+                    <div class="text-white-50 pt-3 pb-3 fontBold">
                       <h5>Mercedes Benz Convertible Coupe</h5>
                       <h5 class="textOrange">$25,800</h5>
                       <div class="d-flex align-items-center">
@@ -493,49 +501,41 @@
                         <p>New York</p>
                       </div>
                     </div>
+                    <!-- footer -->
                   </div>
-                  <div class="px-2 text-white">
-                    <div class="p-0 pb-3 mx-2 offersBorderT">
-                      <div class="pt-3 mx-3">
-                        <div class="row d-grid offerGridD gap-1 px-2">
-                          <div class="col offerBorderRadius bodyColor">
-                            <div class="text-center w-100 h-100 p-2">
-                              <img
-                                src="./img/icons/icons8-speedometer-50.png"
-                                alt=""
-                                class="offerIconS"
-                              />
-                              <p>48K mi</p>
-                            </div>
-                          </div>
-                          <div
-                            class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                          >
-                            <div
-                              class="d-flex justify-content-center align-items-center"
-                            >
-                              <img
-                                src="./img/icons/icons8-automatic-50.png"
-                                alt=""
-                                class="offerIconS"
-                              />
-                            </div>
-                            <span class="">item</span>
-                          </div>
-                          <div
-                            class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                          >
-                            <div
-                              class="d-flex justify-content-center align-items-center"
-                            >
-                              <img
-                                src="./img/icons/icons8-petrol-50.png"
-                                alt=""
-                                class="offerIconS"
-                              />
-                            </div>
-                            <p>Gasoline</p>
-                          </div>
+                  <div class="card-footer pt-3 offersBorderT mx-3">
+                    <div class="row d-grid offerGridD gap-1 text-white">
+                      <!-- first col -->
+                      <div class="col offerBorderRadius bodyColor p-0">
+                        <div class="text-center w-100 h-100 p-2">
+                          <img
+                            src="./img/icons/icons8-speedometer-50.png"
+                            alt=""
+                            class="offerIconS"
+                          />
+                          <p class="topOfferTextSize">7K mi</p>
+                        </div>
+                      </div>
+                      <!-- second col -->
+                      <div class="col offerBorderRadius bodyColor p-0">
+                        <div class="text-center w-100 h-100 p-2">
+                          <img
+                            src="./img/icons/icons8-automatic-50.png"
+                            alt=""
+                            class="offerIconS"
+                          />
+                          <p class="topOfferTextSize">Automatic</p>
+                        </div>
+                      </div>
+                      <!-- third col -->
+                      <div class="col offerBorderRadius bodyColor">
+                        <div class="text-center w-100 h-100 p-2">
+                          <img
+                            src="./img/icons/icons8-petrol-50.png"
+                            alt=""
+                            class="offerIconS"
+                          />
+                          <p class="topOfferTextSize">Gasolin</p>
                         </div>
                       </div>
                     </div>
@@ -553,7 +553,7 @@
                       <div class="position-relative offerleftContent">
                         <!-- carosel -->
                         <div
-                          id="carouselExampleControls2"
+                          id="topItem2"
                           class="carousel slide h-100"
                           data-bs-ride="carousel"
                         >
@@ -580,7 +580,7 @@
                           <button
                             class="carousel-control-prev"
                             type="button"
-                            data-bs-target="#carouselExampleControls2"
+                            data-bs-target="#topItem2"
                             data-bs-slide="prev"
                           >
                             <span
@@ -592,7 +592,7 @@
                           <button
                             class="carousel-control-next"
                             type="button"
-                            data-bs-target="#carouselExampleControls2"
+                            data-bs-target="#topItem2"
                             data-bs-slide="next"
                           >
                             <span
@@ -612,69 +612,76 @@
                         <!-- overlay -->
                       </div>
                       <!-- second col -->
-                      <div class="offerRightContent">
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
                         <div
-                          class="text-white pb-0 d-flex justify-content-between pt-3 px-3"
+                          class="text-white pb-0 d-flex justify-content-between"
                         >
-                          <p class="mb-0">2015</p>
-                          <p class="mb-0">Compare</p>
+                          <p class="mb-0">2011</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
                         </div>
-                        <div
-                          class="text-white-50 pt-3 responsiveP px-3 fontBold"
-                        >
-                          <h5>Mercedes Benz Convertible Coupe</h5>
-                          <h5 class="textOrange">$25,800</h5>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>White Marcedes-Benz</h5>
+                          <h5 class="textOrange">$20,000</h5>
                           <div class="d-flex align-items-center">
                             <img
                               src="./img/icons/icons8-location-50.png"
                               alt=""
                               class="iconSize"
                             />
-                            <p>New York</p>
+                            <p>Norway</p>
                           </div>
                         </div>
-                        <div class="px-2 text-white">
-                          <div class="card-footer p-0 pb-3 mx-2 offersBorderT">
-                            <div class="pt-3 mx-3">
-                              <div class="row d-grid offerGridD gap-1 px-2">
-                                <div class="col offerBorderRadius bodyColor">
-                                  <div class="text-center w-100 h-100 p-2">
-                                    <img
-                                      src="./img/icons/icons8-speedometer-50.png"
-                                      alt=""
-                                      class="offerIconS"
-                                    />
-                                    <p>48K mi</p>
-                                  </div>
-                                </div>
-                                <div
-                                  class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                                >
-                                  <div
-                                    class="d-flex justify-content-center align-items-center"
-                                  >
-                                    <img
-                                      src="./img/icons/icons8-automatic-50.png"
-                                      alt=""
-                                      class="offerIconS"
-                                    />
-                                  </div>
-                                  <span class="">item</span>
-                                </div>
-                                <div
-                                  class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                                >
-                                  <div
-                                    class="d-flex justify-content-center align-items-center"
-                                  >
-                                    <img
-                                      src="./img/icons/icons8-petrol-50.png"
-                                      alt=""
-                                      class="offerIconS"
-                                    />
-                                  </div>
-                                  <p>Gasoline</p>
-                                </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="./img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">10K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="./img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="./img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
                               </div>
                             </div>
                           </div>
@@ -682,14 +689,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 h-100 px-2">
-                    <div class="d-flex flex-row searchButtonDesign2 p-0">
+                  <div class="col-12 rounded-3 h-100 px-2">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
                       <!-- child row -->
                       <!-- first col -->
                       <div class="position-relative offerleftContent">
                         <!-- carosel -->
                         <div
-                          id="carouselExampleControls3"
+                          id="topItem3"
                           class="carousel slide h-100"
                           data-bs-ride="carousel"
                         >
@@ -703,20 +712,20 @@
                             <div class="carousel-item h-100">
                               <img
                                 src="./img/wallpaperflare.com_wallpaper (8).jpg"
-                                class="w-100 offerImgPL"
+                                class="offerImgPL"
                               />
                             </div>
                             <div class="carousel-item h-100">
                               <img
                                 src="./img/wallpaperflare.com_wallpaper (8).jpg"
-                                class="w-100 offerImgPL"
+                                class="offerImgPL"
                               />
                             </div>
                           </div>
                           <button
                             class="carousel-control-prev"
                             type="button"
-                            data-bs-target="#carouselExampleControls3"
+                            data-bs-target="#topItem3"
                             data-bs-slide="prev"
                           >
                             <span
@@ -728,7 +737,7 @@
                           <button
                             class="carousel-control-next"
                             type="button"
-                            data-bs-target="#carouselExampleControls3"
+                            data-bs-target="#topItem3"
                             data-bs-slide="next"
                           >
                             <span
@@ -748,69 +757,76 @@
                         <!-- overlay -->
                       </div>
                       <!-- second col -->
-                      <div class="offerRightContent">
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
                         <div
-                          class="text-white pb-0 d-flex justify-content-between pt-3 px-3"
+                          class="text-white pb-0 d-flex justify-content-between"
                         >
-                          <p class="mb-0">2015</p>
-                          <p class="mb-0">Compare</p>
+                          <p class="mb-0">2017</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
                         </div>
-                        <div
-                          class="text-white-50 pt-3 responsiveP px-3 fontBold"
-                        >
-                          <h5>Mercedes Benz Convertible Coupe</h5>
-                          <h5 class="textOrange">$25,800</h5>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>Lamborghini</h5>
+                          <h5 class="textOrange">$50,000</h5>
                           <div class="d-flex align-items-center">
                             <img
                               src="./img/icons/icons8-location-50.png"
                               alt=""
                               class="iconSize"
                             />
-                            <p>New York</p>
+                            <p>England</p>
                           </div>
                         </div>
-                        <div class="px-2 text-white">
-                          <div class="card-footer p-0 pb-3 mx-2 offersBorderT">
-                            <div class="pt-3 mx-3">
-                              <div class="row d-grid offerGridD gap-1 px-2">
-                                <div class="col offerBorderRadius bodyColor">
-                                  <div class="text-center w-100 h-100 p-2">
-                                    <img
-                                      src="./img/icons/icons8-speedometer-50.png"
-                                      alt=""
-                                      class="offerIconS"
-                                    />
-                                    <p>48K mi</p>
-                                  </div>
-                                </div>
-                                <div
-                                  class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                                >
-                                  <div
-                                    class="d-flex justify-content-center align-items-center"
-                                  >
-                                    <img
-                                      src="./img/icons/icons8-automatic-50.png"
-                                      alt=""
-                                      class="offerIconS"
-                                    />
-                                  </div>
-                                  <span class="">item</span>
-                                </div>
-                                <div
-                                  class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                                >
-                                  <div
-                                    class="d-flex justify-content-center align-items-center"
-                                  >
-                                    <img
-                                      src="./img/icons/icons8-petrol-50.png"
-                                      alt=""
-                                      class="offerIconS"
-                                    />
-                                  </div>
-                                  <p>Gasoline</p>
-                                </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="./img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">5K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="./img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Automatic</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="./img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
                               </div>
                             </div>
                           </div>
@@ -946,11 +962,11 @@
         <div class="container-fluid">
           <div class="d-flex justify-content-between pb-4">
             <span>
-              <h3 class="text-white">Top Offers</h3>
+              <h3 class="text-white">What sets FindIt apart?</h3>
             </span>
             <span>
               >
-              <a href="#" class="text-white-50">View all Offers</a>
+              <a href="#" class="text-white-50">How to sell cars on FindIt</a>
               <img
                 src="./img/icons/icons8-arrow-50.png"
                 alt=""
@@ -994,10 +1010,11 @@
                   />
                 </div>
                 <div class="text-start text-lg-end">
-                  <h4 class="fontBold">Over 1 Million Listings</h4>
+                  <h4 class="fontBold">Personalized Search</h4>
                   <p class="text-white-50">
-                    That’s more than you’ll find on any other major online
-                    automotive marketplace in the USA.
+                    Our powerful search makes it easy to personalize your
+                    results so you only see the cars and features you care
+                    about.
                   </p>
                 </div>
                 <div class="ps-3 d-none d-lg-block">
@@ -1018,10 +1035,10 @@
                   />
                 </div>
                 <div class="text-start text-lg-end">
-                  <h4 class="fontBold">Over 1 Million Listings</h4>
+                  <h4 class="fontBold">Non-Stop Innovation</h4>
                   <p class="text-white-50">
-                    That’s more than you’ll find on any other major online
-                    automotive marketplace in the USA.
+                    Our team is constantly developing new features that make the
+                    process of buying and selling a car simpler.
                   </p>
                 </div>
                 <div class="ps-3 d-none d-lg-block">
@@ -1053,10 +1070,10 @@
                   />
                 </div>
                 <div class="text-start">
-                  <h4 class="fontBold">Over 1 Million Listings</h4>
+                  <h4 class="fontBold">Valuable Insights</h4>
                   <p class="text-white-50">
-                    That’s more than you’ll find on any other major online
-                    automotive marketplace in the USA.
+                    We provide free access to key info like dealer reviews,
+                    market value, price drops.
                   </p>
                 </div>
               </div>
@@ -1070,10 +1087,11 @@
                   />
                 </div>
                 <div class="text-start">
-                  <h4 class="fontBold">Over 1 Million Listings</h4>
+                  <h4 class="fontBold">Consumer-First Mentality</h4>
                   <p class="text-white-50">
-                    That’s more than you’ll find on any other major online
-                    automotive marketplace in the USA.
+                    We focus on building the most transparent, trustworthy
+                    experience for our users, and we’ve proven that works for
+                    dealers, too.
                   </p>
                 </div>
               </div>
@@ -1087,10 +1105,10 @@
                   />
                 </div>
                 <div class="text-start">
-                  <h4 class="fontBold">Over 1 Million Listings</h4>
+                  <h4 class="fontBold">Online Car Appraisal</h4>
                   <p class="text-white-50">
-                    That’s more than you’ll find on any other major online
-                    automotive marketplace in the USA.
+                    Specify the parameters of your car to form its market value
+                    on the basis of similar cars on Finder.
                   </p>
                 </div>
               </div>
@@ -1105,11 +1123,11 @@
         <div class="container-fluid">
           <div class="d-flex justify-content-between pb-4">
             <span>
-              <h3 class="text-white">Top Offers</h3>
+              <h3 class="text-white">Latest Cars</h3>
             </span>
             <span>
               >
-              <a href="#" class="text-white-50">View all Offers</a>
+              <a href="#" class="text-white-50">View all</a>
               <img
                 src="./img/icons/icons8-arrow-50.png"
                 alt=""
@@ -1118,41 +1136,30 @@
           </div>
           <div class="row justify-content-center">
             <!-- first item -->
-            <div class="col-10 col-lg-4 mb-3 mb-lg-0">
-              <div
-                class="card w-100 h-100 backgroundColor"
-                style="width: 18rem"
-              >
+            <div class="col col-lg-4 mb-3 mb-lg-0">
+              <div class="card backgroundColor h-100">
+                <!-- top img -->
                 <div class="card-img-top position-relative">
                   <div
-                    id="carouselExampleControls1"
+                    id="latestcar1"
                     class="carousel slide"
                     data-bs-ride="carousel"
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car5.jpg" class="w-100 offerImgP" />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car5.jpg" class="w-100 offerImgP" />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car5.jpg" class="w-100 offerImgP" />
                       </div>
                     </div>
                     <button
                       class="carousel-control-prev"
                       type="button"
-                      data-bs-target="#carouselExampleControls1"
+                      data-bs-target="#latestcar1"
                       data-bs-slide="prev"
                     >
                       <span
@@ -1164,7 +1171,7 @@
                     <button
                       class="carousel-control-next"
                       type="button"
-                      data-bs-target="#carouselExampleControls1"
+                      data-bs-target="#latestcar1"
                       data-bs-slide="next"
                     >
                       <span
@@ -1183,68 +1190,70 @@
                   </div>
                   <!-- overlay -->
                 </div>
-                <div class="card-body p-0">
-                  <div
-                    class="text-white pb-0 d-flex justify-content-between pt-3 px-3"
-                  >
-                    <p class="mb-0">2015</p>
-                    <p class="mb-0">Compare</p>
+                <div class="card-body">
+                  <!-- title -->
+                  <div class="text-white pb-0 d-flex justify-content-between">
+                    <p class="mb-0">2014</p>
+                    <div class="form-check text-white">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Compare
+                      </label>
+                    </div>
                   </div>
-                  <div class="text-white-50 pt-3 pb-3 px-3 fontBold">
-                    <h5>Mercedes Benz Convertible Coupe</h5>
-                    <h5 class="textOrange">$25,800</h5>
+                  <!-- content -->
+                  <div class="text-white-50 pt-3 pb-3 fontBold">
+                    <h5>Silver BMW E92</h5>
+                    <h5 class="textOrange">$40,570</h5>
                     <div class="d-flex align-items-center">
                       <img
                         src="./img/icons/icons8-location-50.png"
                         alt=""
                         class="iconSize"
                       />
-                      <p>New York</p>
+                      <p>China</p>
                     </div>
                   </div>
+                  <!-- footer -->
                 </div>
-                <div class="px-2 text-white">
-                  <div class="p-0 pb-3 mx-2 offersBorderT">
-                    <div class="pt-3 mx-3">
-                      <div class="row d-grid offerGridD gap-1 px-2">
-                        <div class="col offerBorderRadius bodyColor">
-                          <div class="text-center w-100 h-100 p-2">
-                            <img
-                              src="./img/icons/icons8-speedometer-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                            <p>48K mi</p>
-                          </div>
-                        </div>
-                        <div
-                          class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                        >
-                          <div
-                            class="d-flex justify-content-center align-items-center"
-                          >
-                            <img
-                              src="./img/icons/icons8-automatic-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                          </div>
-                          <span class="">item</span>
-                        </div>
-                        <div
-                          class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                        >
-                          <div
-                            class="d-flex justify-content-center align-items-center"
-                          >
-                            <img
-                              src="./img/icons/icons8-petrol-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                          </div>
-                          <p>Gasoline</p>
-                        </div>
+                <div class="card-footer pt-3 offersBorderT mx-3">
+                  <div class="row d-grid offerGridD gap-1 text-white">
+                    <!-- first col -->
+                    <div class="col offerBorderRadius bodyColor p-0">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-speedometer-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">11K mi</p>
+                      </div>
+                    </div>
+                    <!-- second col -->
+                    <div class="col offerBorderRadius bodyColor p-0">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-automatic-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">Automatic</p>
+                      </div>
+                    </div>
+                    <!-- third col -->
+                    <div class="col offerBorderRadius bodyColor">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-petrol-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">Gasolin</p>
                       </div>
                     </div>
                   </div>
@@ -1252,41 +1261,30 @@
               </div>
             </div>
             <!-- second item -->
-            <div class="col-10 col-lg-4 mb-3 mb-lg-0">
-              <div
-                class="card w-100 h-100 backgroundColor"
-                style="width: 18rem"
-              >
+            <div class="col col-lg-4 mb-3 mb-lg-0">
+              <div class="card backgroundColor h-100">
+                <!-- top img -->
                 <div class="card-img-top position-relative">
                   <div
-                    id="carouselExampleControls1"
+                    id="latestCar2"
                     class="carousel slide"
                     data-bs-ride="carousel"
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car6.jpg" class="w-100 offerImgP" />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car6.jpg" class="w-100 offerImgP" />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car6.jpg" class="w-100 offerImgP" />
                       </div>
                     </div>
                     <button
                       class="carousel-control-prev"
                       type="button"
-                      data-bs-target="#carouselExampleControls1"
+                      data-bs-target="#latestCar2"
                       data-bs-slide="prev"
                     >
                       <span
@@ -1298,7 +1296,7 @@
                     <button
                       class="carousel-control-next"
                       type="button"
-                      data-bs-target="#carouselExampleControls1"
+                      data-bs-target="#latestCar2"
                       data-bs-slide="next"
                     >
                       <span
@@ -1317,68 +1315,70 @@
                   </div>
                   <!-- overlay -->
                 </div>
-                <div class="card-body p-0">
-                  <div
-                    class="text-white pb-0 d-flex justify-content-between pt-3 px-3"
-                  >
-                    <p class="mb-0">2015</p>
-                    <p class="mb-0">Compare</p>
+                <div class="card-body">
+                  <!-- title -->
+                  <div class="text-white pb-0 d-flex justify-content-between">
+                    <p class="mb-0">2011</p>
+                    <div class="form-check text-white">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Compare
+                      </label>
+                    </div>
                   </div>
-                  <div class="text-white-50 pt-3 pb-3 px-3 fontBold">
-                    <h5>Mercedes Benz Convertible Coupe</h5>
-                    <h5 class="textOrange">$25,800</h5>
+                  <!-- content -->
+                  <div class="text-white-50 pt-3 pb-3 fontBold">
+                    <h5>Black Lexus GS 300 Sedan</h5>
+                    <h5 class="textOrange">$23,000</h5>
                     <div class="d-flex align-items-center">
                       <img
                         src="./img/icons/icons8-location-50.png"
                         alt=""
                         class="iconSize"
                       />
-                      <p>New York</p>
+                      <p>Taiwan</p>
                     </div>
                   </div>
+                  <!-- footer -->
                 </div>
-                <div class="px-2 text-white">
-                  <div class="p-0 pb-3 mx-2 offersBorderT">
-                    <div class="pt-3 mx-3">
-                      <div class="row d-grid offerGridD gap-1 px-2">
-                        <div class="col offerBorderRadius bodyColor">
-                          <div class="text-center w-100 h-100 p-2">
-                            <img
-                              src="./img/icons/icons8-speedometer-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                            <p>48K mi</p>
-                          </div>
-                        </div>
-                        <div
-                          class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                        >
-                          <div
-                            class="d-flex justify-content-center align-items-center"
-                          >
-                            <img
-                              src="./img/icons/icons8-automatic-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                          </div>
-                          <span class="">item</span>
-                        </div>
-                        <div
-                          class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                        >
-                          <div
-                            class="d-flex justify-content-center align-items-center"
-                          >
-                            <img
-                              src="./img/icons/icons8-petrol-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                          </div>
-                          <p>Gasoline</p>
-                        </div>
+                <div class="card-footer pt-3 offersBorderT mx-3">
+                  <div class="row d-grid offerGridD gap-1 text-white">
+                    <!-- first col -->
+                    <div class="col offerBorderRadius bodyColor p-0">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-speedometer-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">15K mi</p>
+                      </div>
+                    </div>
+                    <!-- second col -->
+                    <div class="col offerBorderRadius bodyColor p-0">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-automatic-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">Automatic</p>
+                      </div>
+                    </div>
+                    <!-- third col -->
+                    <div class="col offerBorderRadius bodyColor">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-petrol-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">Gasolin</p>
                       </div>
                     </div>
                   </div>
@@ -1386,41 +1386,30 @@
               </div>
             </div>
             <!-- third item -->
-            <div class="col-10 col-lg-4 mb-3 mb-lg-0">
-              <div
-                class="card w-100 h-100 backgroundColor"
-                style="width: 18rem"
-              >
+            <div class="col col-lg-4 mb-3 mb-lg-0">
+              <div class="card backgroundColor h-100">
+                <!-- top img -->
                 <div class="card-img-top position-relative">
                   <div
-                    id="carouselExampleControls1"
+                    id="latestcar3"
                     class="carousel slide"
                     data-bs-ride="carousel"
                   >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car7.jpg" class="w-100 offerImgP" />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car7.jpg" class="w-100 offerImgP" />
                       </div>
                       <div class="carousel-item">
-                        <img
-                          src="./img/wallpaperflare.com_wallpaper (6).jpg"
-                          class="w-100 offerImgP"
-                        />
+                        <img src="./img/car7.jpg" class="w-100 offerImgP" />
                       </div>
                     </div>
                     <button
                       class="carousel-control-prev"
                       type="button"
-                      data-bs-target="#carouselExampleControls1"
+                      data-bs-target="#latestcar3"
                       data-bs-slide="prev"
                     >
                       <span
@@ -1432,7 +1421,7 @@
                     <button
                       class="carousel-control-next"
                       type="button"
-                      data-bs-target="#carouselExampleControls1"
+                      data-bs-target="#latestcar3"
                       data-bs-slide="next"
                     >
                       <span
@@ -1451,68 +1440,70 @@
                   </div>
                   <!-- overlay -->
                 </div>
-                <div class="card-body p-0">
-                  <div
-                    class="text-white pb-0 d-flex justify-content-between pt-3 px-3"
-                  >
-                    <p class="mb-0">2015</p>
-                    <p class="mb-0">Compare</p>
+                <div class="card-body">
+                  <!-- title -->
+                  <div class="text-white pb-0 d-flex justify-content-between">
+                    <p class="mb-0">2019</p>
+                    <div class="form-check text-white">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Compare
+                      </label>
+                    </div>
                   </div>
-                  <div class="text-white-50 pt-3 pb-3 px-3 fontBold">
-                    <h5>Mercedes Benz Convertible Coupe</h5>
-                    <h5 class="textOrange">$25,800</h5>
+                  <!-- content -->
+                  <div class="text-white-50 pt-3 pb-3 fontBold">
+                    <h5>Red Acura NXS</h5>
+                    <h5 class="textOrange">$50,000</h5>
                     <div class="d-flex align-items-center">
                       <img
                         src="./img/icons/icons8-location-50.png"
                         alt=""
                         class="iconSize"
                       />
-                      <p>New York</p>
+                      <p>India</p>
                     </div>
                   </div>
+                  <!-- footer -->
                 </div>
-                <div class="px-2 text-white">
-                  <div class="p-0 pb-3 mx-2 offersBorderT">
-                    <div class="pt-3 mx-3">
-                      <div class="row d-grid offerGridD gap-1 px-2">
-                        <div class="col offerBorderRadius bodyColor">
-                          <div class="text-center w-100 h-100 p-2">
-                            <img
-                              src="./img/icons/icons8-speedometer-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                            <p>48K mi</p>
-                          </div>
-                        </div>
-                        <div
-                          class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                        >
-                          <div
-                            class="d-flex justify-content-center align-items-center"
-                          >
-                            <img
-                              src="./img/icons/icons8-automatic-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                          </div>
-                          <span class="">item</span>
-                        </div>
-                        <div
-                          class="col d-grid justify-content-center mx-0 px-0 offerBorderRadius bodyColor"
-                        >
-                          <div
-                            class="d-flex justify-content-center align-items-center"
-                          >
-                            <img
-                              src="./img/icons/icons8-petrol-50.png"
-                              alt=""
-                              class="offerIconS"
-                            />
-                          </div>
-                          <p>Gasoline</p>
-                        </div>
+                <div class="card-footer pt-3 offersBorderT mx-3">
+                  <div class="row d-grid offerGridD gap-1 text-white">
+                    <!-- first col -->
+                    <div class="col offerBorderRadius bodyColor p-0">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-speedometer-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">7K mi</p>
+                      </div>
+                    </div>
+                    <!-- second col -->
+                    <div class="col offerBorderRadius bodyColor p-0">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-automatic-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">Automatic</p>
+                      </div>
+                    </div>
+                    <!-- third col -->
+                    <div class="col offerBorderRadius bodyColor">
+                      <div class="text-center w-100 h-100 p-2">
+                        <img
+                          src="./img/icons/icons8-petrol-50.png"
+                          alt=""
+                          class="offerIconS"
+                        />
+                        <p class="topOfferTextSize">Gasolin</p>
                       </div>
                     </div>
                   </div>

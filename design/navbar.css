@@ -124,7 +124,6 @@ p {
 }
 .iconSize {
   width: 20px;
-  object-fit: contain;
 }
 .iconsPL {
   padding-right: 5px;
@@ -162,17 +161,17 @@ p {
 .offersBorderT {
   border-top: 1px solid gray;
 }
-.offerImgP {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  width: 100%;
-}
+
 .offerImgPL {
-  /* border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px; */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.offerImgP {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .hei {
   height: 100%;
@@ -184,8 +183,8 @@ p {
   background-size: contain;
 }
 .offerIconS {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-bottom: 5px;
 }
 .offerBorderRadius {
@@ -231,6 +230,12 @@ p {
 .responsiveP {
   padding-bottom: 45px;
 }
+.topOfferTextSize {
+  font-size: 12px;
+}
+.marginT {
+  margin-top: 40px;
+}
 /* End Top Offers design */
 
 /* logo section design */
@@ -259,8 +264,16 @@ p {
 
 /* search section */
 @media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width: 576px) {
   .borderLHide3 {
     border: none;
+  }
+  .offerImgPL {
+    border-top-right-radius: 8px;
+  }
+  .marginT {
+    margin-top: 0%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -280,6 +293,16 @@ p {
 }
 /* end search section */
 
+/* top offers section */
+@media screen and (max-width: 576px) {
+  .offerleftContent {
+    width: 100%;
+  }
+  .offerRightContent {
+    width: 100%;
+  }
+}
+/* end top offers section */
 @media only screen and (min-width: 992px) {
   .showherotext {
     opacity: 0;
