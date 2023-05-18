@@ -1,0 +1,10 @@
+.signIconS {
+  width: 20px;
+  margin-right: 5px;
+}
+.textBorder {
+  text-decoration: underline;
+  color: white;
+  text-decoration-color: white;
+  margin-left: 3px;
+}

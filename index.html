@@ -49,35 +49,14 @@
           id="navbarSupportedContent "
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown px-2">
-              <a
-                class="nav-link dropdown-toggle text-white-50 d-flex align-items-center"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./img/icons/icons8-box-50.png"
-                  alt=""
-                  class="navIcon"
-                />
-                <div class="d-flex align-items-center">Demos</div>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Main Page</a></li>
-                <li><a class="dropdown-item" href="#">Components</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Documentation</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item px-3 border-left">
+            <!-- link 1 -->
+            <li class="nav-item px-3">
               <a class="nav-link active text-white" aria-current="page" href="#"
                 >Home</a
               >
             </li>
-            <li class="nav-item dropdown px-2">
+            <!-- link 2 -->
+            <li class="nav-item dropdown px-2 border-left">
               <a
                 class="nav-link dropdown-toggle text-white-50"
                 href="#"
@@ -95,6 +74,7 @@
                 </li>
               </ul>
             </li>
+            <!-- link 3 -->
             <li class="nav-item dropdown px-2">
               <a
                 class="nav-link dropdown-toggle text-white-50"
@@ -115,6 +95,7 @@
                 </li>
               </ul>
             </li>
+            <!-- link 4-->
             <li class="nav-item dropdown px-2">
               <a
                 class="nav-link dropdown-toggle text-white-50"
@@ -156,64 +137,137 @@
         </div>
         <!-- nav mobile view -->
         <div
-          class="offcanvas offcanvas-end d-block d-lg-none"
+          class="offcanvas bodyColor offcanvas-end d-block d-lg-none"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
             <!-- logo -->
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <div class="d-flex">
+              <div class="d-flex align-items-center">
+                <img src="./img/Logo.png" alt="" class="navLogoImg" />
+              </div>
+              <div class="d-flex align-items-center text-white navLogoPaddingL">
+                FindIt
+              </div>
+            </div>
             <!-- menu button -->
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <div type="button" data-bs-dismiss="offcanvas">
+              <img
+                src="./img/icons/icons8-close-50.png"
+                alt=""
+                class="navLogoImg"
+              />
+            </div>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <!-- menu links -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
+            <ul class="navbar-nav">
+              <!-- link 1 -->
+              <li class="nav-item px-3 py-1 navBorderC mb-3">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <!-- link 2 -->
+              <li class="nav-item dropdown px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link dropdown-toggle text-white-50"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Catalog
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul
+                  class="dropdown-menu hideB bg-transparent navBorderL p-0 mb-1"
+                >
                   <li>
-                    <hr class="dropdown-divider" />
+                    <a class="dropdown-item text-white" href="#">List View</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item text-white" href="#">Grid View</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Car Single Page</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- link 3 -->
+              <li class="nav-item dropdown px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link dropdown-toggle text-white-50"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vendor
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu hideB bg-transparent navBorderL p-0 mb-1"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Sell Car</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Add Promotion Page</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Vendor Page</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- link 4-->
+              <li class="nav-item dropdown px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link dropdown-toggle text-white-50"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu hideB bg-transparent navBorderL p-0 mb-1"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Personal Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Password & Security</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">My Cars</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Wishlist</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Reviews</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Sign In</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Sign Up</a>
                   </li>
                 </ul>
               </li>
             </ul>
-            <form class="d-flex mt-3" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </div>
@@ -1658,7 +1712,8 @@
         </div>
       </section>
       <!-- end shop section -->
-
+    </main>
+    <footer>
       <!-- footer section -->
       <section class="mt-5 footerBackgroundC">
         <div class="container-fluid">
@@ -1916,7 +1971,7 @@
         </div>
       </section>
       <!-- end footer section -->
-    </main>
+    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

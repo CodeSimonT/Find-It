@@ -74,7 +74,7 @@ ul {
   background-color: rgba(31, 27, 45, 0.9);
 }
 .navLogoImg {
-  width: 40px;
+  width: 30px;
   margin-right: 5px;
 }
 .navLogoPaddingL {
@@ -110,7 +110,19 @@ ul {
 .border-left {
   border-left: 1px solid gray;
 }
-
+.hideB {
+  border: none;
+  border-radius: 0%;
+}
+.navBorderL {
+  border-left: 2px solid gray;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.navBorderC {
+  border: 1px solid gray;
+  border-radius: 8px;
+}
 /* End Nav design */
 
 /* Hero Design */
