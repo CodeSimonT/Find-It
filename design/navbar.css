@@ -263,8 +263,14 @@ p {
 /* Media Query */
 
 /* search section */
-@media only screen and (max-width: 576px) {
+/* apart media query */
+@media only screen and (max-width: 768px) {
+  .maxWidth {
+    max-width: 550px;
+  }
 }
+/* end apart media query */
+
 @media only screen and (max-width: 576px) {
   .borderLHide3 {
     border: none;
