@@ -52,7 +52,23 @@ ul {
   background-color: #fd5631;
 }
 /* End Global style */
+/* scroll bar design */
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #1f1b2d;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fd5631;
+  border-radius: 5px;
+}
+/* end scroll bar design */
 /* Nav design */
 .navBackgroundC {
   background-color: rgba(31, 27, 45, 0.9);
