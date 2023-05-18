@@ -1,4 +1,5 @@
 * {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #1f1b2d;
@@ -16,9 +17,19 @@ a {
 p {
   margin-bottom: 0px;
 }
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
 .radiusB {
   border-radius: 20px;
 }
+.Pcolor {
+  color: #b1afb6;
+}
+
 /* h5 {
   margin-bottom: 0%;
 } */
@@ -36,6 +47,9 @@ p {
 }
 .lightgreen {
   background-color: #07c98b;
+}
+.buttonBackGround {
+  background-color: #fd5631;
 }
 /* End Global style */
 
@@ -260,9 +274,78 @@ p {
 }
 /* end apart section design */
 
+/* shop section design */
+.shopImgSize {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.containerR {
+  border-radius: 10px;
+}
+.shopIconS {
+  width: 20px;
+  height: 20px;
+}
+
+/* end shop section design */
+
+/* footer section design */
+.footerBackgroundC {
+  background-color: #282435;
+}
+.footerIconS {
+  width: 15px;
+}
+.footerBorderB {
+  border-bottom: 1px solid gray;
+}
+.borderInput {
+  border: 1px solid gray;
+}
+.removeBorder {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+.footerISize {
+  width: 20px;
+  margin-right: 5px;
+}
+.footersearchS1 {
+  width: 95%;
+}
+.footersearchS2 {
+  width: 5%;
+}
+.footersearchI {
+  width: 20px;
+}
+/* footer section design */
+
 /* Media Query */
 
 /* search section */
+
+/* shop mediq query */
+@media screen and (min-width: 576px) {
+  .shopImgResponsive {
+    width: 160px;
+  }
+}
+/* @media screen and (min-width: 922px) {
+  .shopImgResponsive {
+    width: 80%;
+  }
+} */
+@media screen and (max-width: 768px) {
+  .shopLeftC {
+    width: 45%;
+  }
+  .shopRightC {
+    width: 55%;
+  }
+}
 /* apart media query */
 @media only screen and (max-width: 768px) {
   .maxWidth {
