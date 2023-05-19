@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../img/Logo.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../design/navbar.css" />
+    <link rel="stylesheet" href="../design/list.css" />
+    <title>FindIt</title>
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <nav class="navbar navbar-expand-lg fixed-top navBackgroundC py-3">
+      <div class="container-fluid">
+        <!-- logo -->
+        <div class="d-flex">
+          <div class="d-flex align-items-center">
+            <img src="../img/Logo.png" alt="" class="navLogoImg" />
+          </div>
+          <div class="d-flex align-items-center text-white navLogoPaddingL">
+            FindIt
+          </div>
+        </div>
+        <!-- menu button -->
+        <div>
+          <button
+            class="navbar-toggler shadow-none border-0 py-2 px-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span
+              ><img
+                src="../img/icons/icons8-menu-50.png"
+                alt=""
+                class="navMenuButton"
+            /></span>
+          </button>
+
+          <div class="text-white fontBold buttonD1 d-inline d-lg-none">
+            <p class="d-inline">Sell Car</p>
+          </div>
+        </div>
+        <!-- nav web view -->
+        <div
+          class="collapse navbar-collapse navPaddingL fontBold"
+          id="navbarSupportedContent "
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- link 1 -->
+            <li class="nav-item px-3">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <!-- link 2 -->
+            <li class="nav-item dropdown px-2 border-left">
+              <a
+                class="nav-link dropdown-toggle text-white-50"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Catalog
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../pages/listView.html"
+                    >List View</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Grid View</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Car Single Page</a>
+                </li>
+              </ul>
+            </li>
+            <!-- link 3 -->
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link dropdown-toggle text-white-50"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Vendor
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sell Car</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Add Promotion Page</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Vendor Page</a>
+                </li>
+              </ul>
+            </li>
+            <!-- link 4-->
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link dropdown-toggle text-white-50"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Password & Security</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">My Cars</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                <li><a class="dropdown-item" href="#">Reviews</a></li>
+                <li>
+                  <a class="dropdown-item" href="../pages/signIn.html"
+                    >Sign In</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/signUp.html"
+                    >Sign Up</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="text-white-50 fontBold d-flex">
+            <span class="d-flex pointer">
+              <img
+                src="./img/icons/icons8-person-50.png"
+                alt=""
+                class="navIcon"
+              />
+              <div class="d-flex align-items-center">Sign in</div>
+            </span>
+            <div class="text-white fontBold navButton">
+              <a>Sell Car</a>
+            </div>
+          </div>
+        </div>
+        <!-- nav mobile view -->
+        <div
+          class="offcanvas bodyColor offcanvas-end d-block d-lg-none"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- logo -->
+            <div class="d-flex">
+              <div class="d-flex align-items-center">
+                <img src="../img/Logo.png" alt="" class="navLogoImg" />
+              </div>
+              <div class="d-flex align-items-center text-white navLogoPaddingL">
+                FindIt
+              </div>
+            </div>
+            <!-- menu button -->
+            <div type="button" data-bs-dismiss="offcanvas">
+              <img
+                src="../img/icons/icons8-close-50.png"
+                alt=""
+                class="navLogoImg"
+              />
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <!-- link 1 -->
+              <li class="nav-item px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <!-- link 2 -->
+              <li class="nav-item dropdown px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link dropdown-toggle text-white-50"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catalog
+                </a>
+                <ul
+                  class="dropdown-menu hideB bg-transparent navBorderL p-0 mb-1"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-white"
+                      href="../pages/listView.html"
+                      >List View</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Grid View</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Car Single Page</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- link 3 -->
+              <li class="nav-item dropdown px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link dropdown-toggle text-white-50"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vendor
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu hideB bg-transparent navBorderL p-0 mb-1"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Sell Car</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Add Promotion Page</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Vendor Page</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- link 4-->
+              <li class="nav-item dropdown px-3 py-1 navBorderC mb-3">
+                <a
+                  class="nav-link dropdown-toggle text-white-50"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu hideB bg-transparent navBorderL p-0 mb-1"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Personal Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Password & Security</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">My Cars</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Wishlist</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Reviews</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white"
+                      href="../pages/signIn.html"
+                      >Sign In</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white"
+                      href="../pages/signUp.html"
+                      >Sign Up</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end Nav Section -->
+
+    <main class="my-5">
+      <!-- main section -->
+      <section class="py-5">
+        <div class="container-fluid">
+          <div class="d-flex text-white">
+            <!-- left content -->
+            <div class="leftContainerSize me-3 d-none d-lg-block">
+              <!-- search button -->
+              <div class="d-flex pb-4 listBorderB">
+                <!--  -->
+                <div class="px-3 py-2 serchBDesign me-2">Search New</div>
+                <!--  -->
+                <div class="px-3 py-2 serchBDesign1">Search Used</div>
+              </div>
+              <!-- location search -->
+              <div class="py-3">
+                <h4 class="mb-4 fontBold">Location</h4>
+                <!-- dropDown -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select your location
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">USA</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">China</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">India</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- body type -->
+              <div class="py-3">
+                <h4 class="mb-3 fontBold">Body Type</h4>
+                <!-- checkbox -->
+                <div>
+                  <!-- item 1 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem1"
+                    />
+                    <label class="form-check-label" for="listItem1">
+                      Sedan
+                    </label>
+                  </div>
+                  <!-- item2 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem2"
+                    />
+                    <label class="form-check-label" for="listItem2">
+                      SUV
+                    </label>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem3"
+                    />
+                    <label class="form-check-label" for="listItem3">
+                      Wagon
+                    </label>
+                  </div>
+                  <!-- item 4 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem4"
+                    />
+                    <label class="form-check-label" for="listItem4">
+                      Crossover
+                    </label>
+                  </div>
+                  <!-- item 5 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Pickup
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- year level -->
+              <div class="py-3">
+                <!-- year level -->
+                <h4 class="mb-3 fontBold">Year Level</h4>
+                <!-- button container -->
+                <div class="d-flex flex-row justify-content-evenly">
+                  <!-- first value -->
+                  <div class="dropdown">
+                    <button
+                      class="serchBDesign border-0 dropdown-toggle p-2"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      From
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">2020</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">2021</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- img -->
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../img/icons/icons8-arrow-50.png"
+                      alt=""
+                      class="linkYearIS"
+                    />
+                  </div>
+                  <!-- second value -->
+                  <div class="dropdown">
+                    <button
+                      class="serchBDesign border-0 dropdown-toggle p-2"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      2019
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">2020</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">2021</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- fuel type -->
+              <div class="py-3">
+                <h4 class="mb-3 fontBo bg-transparentld">Fuel Type</h4>
+                <!-- checkbox  -->
+                <div>
+                  <!-- item 1 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem1"
+                    />
+                    <label class="form-check-label" for="listItem1">
+                      Deisel
+                    </label>
+                  </div>
+                  <!-- item2 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem2"
+                    />
+                    <label class="form-check-label" for="listItem2">
+                      Electric
+                    </label>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem3"
+                    />
+                    <label class="form-check-label" for="listItem3">
+                      Gasolin
+                    </label>
+                  </div>
+                  <!-- item 4 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem4"
+                    />
+                    <label class="form-check-label" for="listItem4">
+                      Hybrid
+                    </label>
+                  </div>
+                  <!-- item 5 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Hydrogen
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Transmission -->
+              <div class="py-3">
+                <h4 class="mb-3 fontBo bg-transparentld">Transmission</h4>
+                <!-- checkbox  -->
+                <div>
+                  <!-- item 1 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem1"
+                    />
+                    <label class="form-check-label" for="listItem1">
+                      Automatic
+                    </label>
+                  </div>
+                  <!-- item2 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem2"
+                    />
+                    <label class="form-check-label" for="listItem2">
+                      Manual
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- colors -->
+              <div class="py-3">
+                <h4 class="mb-3 fontBo bg-transparentld">Color</h4>
+                <!-- checkbox  -->
+                <div class="linkColoMH">
+                  <!-- item 1 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem1"
+                    />
+                    <label class="form-check-label" for="listItem1">
+                      Red
+                    </label>
+                  </div>
+                  <!-- item2 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem2"
+                    />
+                    <label class="form-check-label" for="listItem2">
+                      Blue
+                    </label>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem3"
+                    />
+                    <label class="form-check-label" for="listItem3">
+                      Yellow
+                    </label>
+                  </div>
+                  <!-- item 4 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem4"
+                    />
+                    <label class="form-check-label" for="listItem4">
+                      Pink
+                    </label>
+                  </div>
+                  <!-- item 5 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Green
+                    </label>
+                  </div>
+                  <!-- item 6 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Marron
+                    </label>
+                  </div>
+                  <!-- item 7 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Violet
+                    </label>
+                  </div>
+                  <!-- item 8 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Gray
+                    </label>
+                  </div>
+                  <!-- item 9 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Indigo
+                    </label>
+                  </div>
+                  <!-- item 10 -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem5"
+                    />
+                    <label class="form-check-label" for="listItem5">
+                      Purple
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- sellers -->
+              <div class="py-3">
+                <h4 class="mb-3 fontBo bg-transparentld">Sellers</h4>
+                <!-- checkbox  -->
+                <div>
+                  <!-- item 1 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem1"
+                    />
+                    <label class="form-check-label" for="listItem1">
+                      Dealers Only
+                    </label>
+                  </div>
+                  <!-- item2 -->
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input bg-transparent"
+                      type="checkbox "
+                      value=""
+                      id="listItem2"
+                    />
+                    <label class="form-check-label" for="listItem2">
+                      Private Sellers Only
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right content -->
+            <div class="rightContainerSize rightCMaxw">
+              <!-- link to home -->
+              <div class="text-white-50 d-flex mb-3">
+                <p>Home</p>
+                <div class="px-1">
+                  <img
+                    src="../img/icons/arrowwhite.png"
+                    alt=""
+                    class="linkIconS"
+                  />
+                </div>
+                <p class="text-white">list view</p>
+              </div>
+              <!-- title -->
+              <div class="d-flex justify-content-between text-white mb-3">
+                <div><h1 class="fontBold">Used Cars</h1></div>
+                <div class="d-flex">
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../img/icons/icons8-suv-50.png"
+                      alt=""
+                      class="carIconS"
+                    />
+                    <p class="p-0">890 offers</p>
+                  </div>
+                </div>
+              </div>
+              <!-- sort section -->
+              <div class="d-flex justify-content-between text-white">
+                <div class="d-flex">
+                  <!-- first value -->
+                  <div class="d-flex me-2">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../img/icons/icons8-sort-50.png"
+                        alt=""
+                        class="carIconS"
+                      />
+                    </div>
+                    <div class="d-flex align-items-center"><p>Sort by:</p></div>
+                  </div>
+                  <!-- search -->
+                  <div>
+                    <!-- carosel -->
+                    <div class="dropdown">
+                      <button
+                        class="serchBDesign border-0 dropdown-toggle p-2"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Newest
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- grid container -->
+              <div class="py-4">
+                <div class="row">
+                  <!-- item 1 -->
+                  <div class="col-12 rounded-3 h-100 px-2 mb-3">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
+                      <div class="position-relative offerleftContent">
+                        <!-- carosel -->
+                        <div
+                          id="topItem1"
+                          class="carousel slide h-100"
+                          data-bs-ride="carousel"
+                        >
+                          <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (6).jpg"
+                                class="offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (6).jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (6).jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#topItem1"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#topItem1"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- end carosel -->
+                        <!-- overlay -->
+                        <div class="offerOverlay text-white">
+                          <div class="overlayPaddiing skyblue radiusB fontBold">
+                            New
+                          </div>
+                        </div>
+                        <!-- overlay -->
+                      </div>
+                      <!-- second col -->
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
+                        <div
+                          class="text-white pb-0 d-flex justify-content-between"
+                        >
+                          <p class="mb-0">2015</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input bg-transparent"
+                              type="checkbox "
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
+                        </div>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>Mercedes Benz Convertible Coupe</h5>
+                          <h5 class="textOrange">$25,000</h5>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../img/icons/icons8-location-50.png"
+                              alt=""
+                              class="iconSize"
+                            />
+                            <p>New York</p>
+                          </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">7K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 2 -->
+                  <div class="col-12 rounded-3 h-100 px-2 mb-3">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
+                      <div class="position-relative offerleftContent">
+                        <!-- carosel -->
+                        <div
+                          id="topItem2"
+                          class="carousel slide h-100"
+                          data-bs-ride="carousel"
+                        >
+                          <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (7).jpg"
+                                class="offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (7).jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (7).jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#topItem2"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#topItem2"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- end carosel -->
+                        <!-- overlay -->
+                        <div class="offerOverlay text-white">
+                          <div class="overlayPaddiing skyblue radiusB fontBold">
+                            New
+                          </div>
+                        </div>
+                        <!-- overlay -->
+                      </div>
+                      <!-- second col -->
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
+                        <div
+                          class="text-white pb-0 d-flex justify-content-between"
+                        >
+                          <p class="mb-0">2011</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input bg-transparent"
+                              type="checkbox "
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
+                        </div>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>White Marcedes-Benz</h5>
+                          <h5 class="textOrange">$20,000</h5>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../img/icons/icons8-location-50.png"
+                              alt=""
+                              class="iconSize"
+                            />
+                            <p>Norway</p>
+                          </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">10K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="col-12 rounded-3 h-100 px-2 mb-3">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
+                      <div class="position-relative offerleftContent">
+                        <!-- carosel -->
+                        <div
+                          id="topItem3"
+                          class="carousel slide h-100"
+                          data-bs-ride="carousel"
+                        >
+                          <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (8).jpg"
+                                class="offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (8).jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/wallpaperflare.com_wallpaper (8).jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#topItem3"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#topItem3"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- end carosel -->
+                        <!-- overlay -->
+                        <div class="offerOverlay text-white">
+                          <div class="overlayPaddiing skyblue radiusB fontBold">
+                            New
+                          </div>
+                        </div>
+                        <!-- overlay -->
+                      </div>
+                      <!-- second col -->
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
+                        <div
+                          class="text-white pb-0 d-flex justify-content-between"
+                        >
+                          <p class="mb-0">2017</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input bg-transparent"
+                              type="checkbox "
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
+                        </div>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>Lamborghini</h5>
+                          <h5 class="textOrange">$50,000</h5>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../img/icons/icons8-location-50.png"
+                              alt=""
+                              class="iconSize"
+                            />
+                            <p>England</p>
+                          </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">5K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 4 -->
+                  <div class="col-12 rounded-3 h-100 px-2 mb-3">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
+                      <div class="position-relative offerleftContent">
+                        <!-- carosel -->
+                        <div
+                          id="topItem4"
+                          class="carousel slide h-100"
+                          data-bs-ride="carousel"
+                        >
+                          <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                              <img src="../img/car5.jpg" class="offerImgPL" />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/car5.jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/car5.jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#topItem4"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#topItem4"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- end carosel -->
+                        <!-- overlay -->
+                        <div class="offerOverlay text-white">
+                          <div class="overlayPaddiing skyblue radiusB fontBold">
+                            New
+                          </div>
+                        </div>
+                        <!-- overlay -->
+                      </div>
+                      <!-- second col -->
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
+                        <div
+                          class="text-white pb-0 d-flex justify-content-between"
+                        >
+                          <p class="mb-0">2014</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input bg-transparent"
+                              type="checkbox "
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
+                        </div>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>Silver BMW E92</h5>
+                          <h5 class="textOrange">$40,570</h5>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../img/icons/icons8-location-50.png"
+                              alt=""
+                              class="iconSize"
+                            />
+                            <p>China</p>
+                          </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">11K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 5 -->
+                  <div class="col-12 rounded-3 h-100 px-2 mb-3">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
+                      <div class="position-relative offerleftContent">
+                        <!-- carosel -->
+                        <div
+                          id="topItem5"
+                          class="carousel slide h-100"
+                          data-bs-ride="carousel"
+                        >
+                          <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                              <img src="../img/car6.jpg" class="offerImgPL" />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/car6.jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/car6.jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#topItem5"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#topItem5"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- end carosel -->
+                        <!-- overlay -->
+                        <div class="offerOverlay text-white">
+                          <div class="overlayPaddiing skyblue radiusB fontBold">
+                            New
+                          </div>
+                        </div>
+                        <!-- overlay -->
+                      </div>
+                      <!-- second col -->
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
+                        <div
+                          class="text-white pb-0 d-flex justify-content-between"
+                        >
+                          <p class="mb-0">2011</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input bg-transparent"
+                              type="checkbox "
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
+                        </div>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>Black Lexus GS 300 Sedan</h5>
+                          <h5 class="textOrange">$23,000</h5>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../img/icons/icons8-location-50.png"
+                              alt=""
+                              class="iconSize"
+                            />
+                            <p>Taiwan</p>
+                          </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">15K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 6 -->
+                  <div class="col-12 rounded-3 h-100 px-2 mb-3">
+                    <div
+                      class="d-flex flex-column flex-sm-row searchButtonDesign2 p-0"
+                    >
+                      <div class="position-relative offerleftContent">
+                        <!-- carosel -->
+                        <div
+                          id="topItem6"
+                          class="carousel slide h-100"
+                          data-bs-ride="carousel"
+                        >
+                          <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                              <img src="../img/car7.jpg" class="offerImgPL" />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/car7.jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                            <div class="carousel-item h-100">
+                              <img
+                                src="../img/car7.jpg"
+                                class="w-100 offerImgPL"
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#topItem6"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#topItem6"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- end carosel -->
+                        <!-- overlay -->
+                        <div class="offerOverlay text-white">
+                          <div class="overlayPaddiing skyblue radiusB fontBold">
+                            New
+                          </div>
+                        </div>
+                        <!-- overlay -->
+                      </div>
+                      <!-- second col -->
+                      <div class="offerRightContent p-3">
+                        <!-- title -->
+                        <div
+                          class="text-white pb-0 d-flex justify-content-between"
+                        >
+                          <p class="mb-0">2019</p>
+                          <div class="form-check text-white">
+                            <input
+                              class="form-check-input bg-transparent"
+                              type="checkbox "
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault"
+                            >
+                              Compare
+                            </label>
+                          </div>
+                        </div>
+                        <!-- content -->
+                        <div class="text-white-50 pt-3 pb-3 fontBold">
+                          <h5>Red Acura NXS</h5>
+                          <h5 class="textOrange">$50,000</h5>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="../img/icons/icons8-location-50.png"
+                              alt=""
+                              class="iconSize"
+                            />
+                            <p>India</p>
+                          </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="pt-3 marginT offersBorderT">
+                          <div
+                            class="row d-grid offerGridD gap-1 px-2 text-white"
+                          >
+                            <!-- first col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-speedometer-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">7K mi</p>
+                              </div>
+                            </div>
+                            <!-- second col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-automatic-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Manual</p>
+                              </div>
+                            </div>
+                            <!-- third col -->
+                            <div class="col offerBorderRadius bodyColor p-0">
+                              <div class="text-center w-100 h-100 p-2">
+                                <img
+                                  src="../img/icons/icons8-petrol-50.png"
+                                  alt=""
+                                  class="offerIconS"
+                                />
+                                <p class="topOfferTextSize">Gasolin</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- sort section -->
+              <div class="d-flex justify-content-between text-white">
+                <!-- left value -->
+                <div class="d-flex">
+                  <!-- first value -->
+                  <div class="d-flex me-2">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../img/icons/icons8-sort-50.png"
+                        alt=""
+                        class="carIconS"
+                      />
+                    </div>
+                    <div class="d-flex align-items-center m-0">
+                      <p>Sort by:</p>
+                    </div>
+                  </div>
+                  <!-- search -->
+                  <div>
+                    <div class="dropdown">
+                      <button
+                        class="serchBDesign border-0 dropdown-toggle p-2"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Newest
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- right value -->
+                <div class="">
+                  <ul class="pagination m-0 p-0">
+                    <li class="page-item">
+                      <a
+                        class="page-link bg-transparent text-white border-0"
+                        href="#"
+                        tabindex="-1"
+                        >Previous</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link bg-transparent text-white border-0"
+                        href="#"
+                        >1</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link bg-transparent text-white border-0"
+                        href="#"
+                        >2</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link bg-transparent text-white border-0"
+                        href="#"
+                        >3</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a
+                        class="page-link bg-transparent text-white border-0"
+                        href="#"
+                        >Next</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end main section -->
+    </main>
+
+    <footer>
+      <!-- footer section -->
+      <section class="mt-5 footerBackgroundC">
+        <div class="container-fluid">
+          <!-- footer heading content -->
+          <div class="footerBorderB">
+            <div
+              class="d-flex justify-content-between flex-column flex-md-row py-4"
+            >
+              <!-- logo -->
+              <div class="d-flex mb-2 mb-md-0">
+                <div class="d-flex align-items-center">
+                  <img src="../img/Logo.png" alt="" class="navLogoImg" />
+                </div>
+                <div
+                  class="d-flex align-items-center text-white navLogoPaddingL"
+                >
+                  FindIt
+                </div>
+              </div>
+              <!-- right content -->
+              <div class="d-flex align-items-center">
+                <!-- first button -->
+                <div class="me-3">
+                  <div class="btn-group">
+                    <span
+                      ><img
+                        src="../img/icons/icons8-globe-50.png"
+                        alt=""
+                        class="footerIconS"
+                    /></span>
+                    <button
+                      type="button"
+                      class="btn text-white-50 shadow-none border-0 dropdown-toggle p-0 ms-1"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      Eng
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Action
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Another action
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Something else here
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- second button -->
+                <div class="">
+                  <div class="btn-group">
+                    <span
+                      ><img
+                        src="../img/icons/icons8-location-50.png"
+                        alt=""
+                        class="footerIconS"
+                    /></span>
+                    <button
+                      type="button"
+                      class="btn text-white-50 dropdown-toggle p-0 ms-1"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      New York
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Action
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Another action
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Something else here
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer links content -->
+          <div class="row text-white">
+            <!-- first col -->
+            <div class="col-12 col-lg-3 py-4">
+              <h5 class="fontBold">Subscribe to our newsletter</h5>
+              <p class="mb-3">Don’t miss any relevant offers!</p>
+              <div
+                class="d-flex align-items-center borderInput py-2 px-2 rounded-3"
+              >
+                <!-- input -->
+                <div class="d-flex footersearchS1">
+                  <div class="d-flex align-items-center ps-2">
+                    <img
+                      src="../img/icons/icons8-emailgray-50.png"
+                      alt=""
+                      class="footerISize"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="bg-transparent removeBorder text-white w-100"
+                    placeholder="Your Email"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                </div>
+                <!-- button -->
+                <div
+                  class="shadow-none border-none footersearchS2 d-flex justify-content-end align-items-center"
+                >
+                  <div
+                    class="d-flex justify-content-center align-items-center buttonBackGround p-2 rounded-2"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <img
+                      src="../img/icons/icons8-paper-plane-50.png"
+                      alt=""
+                      class="footersearchI"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second col -->
+            <div class="col-12 col-lg-9 py-lg-4">
+              <div class="row">
+                <!-- col 1 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-sm-2">
+                  <p class="fs-5 fontBold mb-2">Buying & Selling</p>
+                  <ul class="text-white-50">
+                    <li>Find a car</li>
+                    <li>Sell your car</li>
+                    <li>Car dealers</li>
+                    <li>Compare cars</li>
+                    <li>Online car appraisal</li>
+                  </ul>
+                </div>
+                <!-- col 2 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-sm-2">
+                  <p class="fontBold mb-2 fs-5">About</p>
+                  <ul class="text-white-50">
+                    <li>About Finder</li>
+                    <li>Contact us</li>
+                    <li>FAQs & support</li>
+                    <li>Mobile app</li>
+                    <li>Blog</li>
+                  </ul>
+                </div>
+                <!-- col 3 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-sm-2">
+                  <p class="fontBold mb-2 fs-5">Profile</p>
+                  <ul class="text-white-50">
+                    <li>My account</li>
+                    <li>Wishlist</li>
+                    <li>My listings</li>
+                    <li>Add listing</li>
+                  </ul>
+                </div>
+                <!-- col 4 -->
+                <div class="col-12 col-sm-6 col-md-3 mb-sm-2">
+                  <div>
+                    <!-- item 1 -->
+                    <div class="d-flex flex-row align-items-center">
+                      <div>
+                        <img
+                          src="./img/icons/icons8-phone-50.png"
+                          alt=""
+                          class="footerISize"
+                        />
+                      </div>
+                      <p class="mb-0">09123456789</p>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="d-flex flex-rows align-items-center">
+                      <div>
+                        <img
+                          src="../img/icons/icons8-email-50.png"
+                          alt=""
+                          class="footerISize"
+                        />
+                      </div>
+                      <p class="mb-0">Simon@gmail.com</p>
+                    </div>
+                  </div>
+                  <!-- item icons -->
+                  <div class="d-flex pt-4">
+                    <!-- icon1 -->
+                    <div
+                      class="d-flex justify-content-center align-items-center backgroundColor rounded-5 p-2 me-2"
+                    >
+                      <img
+                        src="../img/icons/icons8-facebook-messenger-50.png"
+                        alt=""
+                        class="footersearchI"
+                      />
+                    </div>
+                    <!-- icon2 -->
+                    <div
+                      class="d-flex justify-content-center align-items-center backgroundColor rounded-5 p-2 me-2"
+                    >
+                      <img
+                        src="../img/icons/icons8-fb-50.png"
+                        alt=""
+                        class="footersearchI"
+                      />
+                    </div>
+                    <!-- icon3 -->
+                    <div
+                      class="d-flex justify-content-center align-items-center backgroundColor rounded-5 p-2 me-2"
+                    >
+                      <img
+                        src="../img/icons/icons8-twitter-50.png"
+                        alt=""
+                        class="footersearchI"
+                      />
+                    </div>
+                    <!-- icon4 -->
+                    <div
+                      class="d-flex justify-content-center align-items-center backgroundColor rounded-5 p-2 me-2"
+                    >
+                      <img
+                        src="../img/icons/icons8-paper-plane-50.png"
+                        alt=""
+                        class="footersearchI"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer copy rigt content -->
+          <div class="text-center py-3 text-white-50">
+            <p>All rights reserved. build by Simon Turiano</p>
+          </div>
+        </div>
+      </section>
+      <!-- end footer section -->
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

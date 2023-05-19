@@ -1,0 +1,41 @@
+.leftContainerSize {
+  width: 23%;
+}
+.rightContainerSize {
+  width: 77%;
+}
+.serchBDesign {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+}
+.listBorderB {
+  border-bottom: 1px solid gray;
+}
+.serchBDesign1 {
+  background-color: white;
+  color: #fd5631;
+  border-radius: 8px;
+}
+.linkIconS {
+  width: 15px;
+  height: 15px;
+}
+.carIconS {
+  width: 20px;
+  margin-right: 5px;
+}
+.linkYearIS {
+  width: 25px;
+}
+.linkColoMH {
+  max-height: 160px;
+  overflow-y: scroll;
+}
+
+/* media quiery */
+@media screen and (max-width: 992px) {
+  .rightCMaxw {
+    width: 100%;
+  }
+}
