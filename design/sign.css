@@ -5,7 +5,9 @@
 .colorBlue {
   color: #3c76f2;
 }
-
+.signImgSize {
+  width: 200px;
+}
 .inputDesign {
   outline: none;
   color: white;
@@ -25,7 +27,7 @@
   margin-right: 5px;
 }
 .containerWidth {
-  width: 1000px;
+  width: 100%;
 }
 .textBorder {
   text-decoration: underline;
@@ -36,4 +38,21 @@
 
 .signCBorderR {
   border-right: 1px solid gray;
+}
+.webView {
+  width: 50%;
+}
+.signImgSO {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .mobileV {
+    width: 100%;
+  }
+  .signImgSizeR {
+    width: 80%;
+  }
+  .hideBorder {
+    border: none;
+  }
 }

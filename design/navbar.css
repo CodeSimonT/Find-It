@@ -29,6 +29,9 @@ ul {
 .Pcolor {
   color: #b1afb6;
 }
+.dropdown-item:active {
+  background-color: transparent;
+}
 
 /* h5 {
   margin-bottom: 0%;
